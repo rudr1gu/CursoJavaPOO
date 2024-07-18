@@ -70,5 +70,11 @@ public class Video implements AcoesVideo {
     @Override
     public void like() {
         this.curtidas++;
-    }   
+    }
+
+    @Override
+    public String toString() {
+        return "Video \navaliacao:" + avaliacao + "\ncurtidas: " + curtidas + "\nreproduzindo: " + reproduzindo + "\ntitulo:"
+                + titulo + "\nviews: " + views + "\n";
+    }
 }
